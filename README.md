@@ -93,9 +93,12 @@ Ordered:
 End a line with two spaces, or leave a fully blank line between paragraphs to start a new paragraph.
 Escaping special characters
 
-A··
+A
 B
-C
+
+A
+
+B
 <br>
 
 #### Use a backslash to show a literal character: \*not italic\*
