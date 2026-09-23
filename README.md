@@ -24,9 +24,14 @@ key: shift value. Break with brute-force method
  ciphered text -> private key ->  plain text
 
  ! Named after inventros. Cornerstone of digital security
- = uses prime numbers
+ = uses large nprime numbers
 
- #### Cyber attacks
+ ##### Cyber attacks
+ - various key combination
+ - RSA is used to encrypt sensitive information
+ - RSA is secure against brute-force method, however quantum computing could be a threat
+ - there is other methods, such as side channel attacks: use physical characteristics such as power comsumption or timing to uncover vulnerabilities
+Sample : Intro to Cryptography playlist & picoGym
 
  ### Markdown Syntax
 
