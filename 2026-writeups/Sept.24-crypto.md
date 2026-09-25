@@ -1,6 +1,7 @@
 
 # A Caesar cipher is a simple encryption technique that operates by shifting letters within the alphabet.
 - Key: the magnitude of the shift (only 25 possible key because of alphabet digits)
+
 Solution: brute-forcing
 
 ## Caesar exercise
