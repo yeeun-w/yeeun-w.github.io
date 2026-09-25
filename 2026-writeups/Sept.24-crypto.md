@@ -13,5 +13,3 @@ Solution: brute-forcing
 1. Go to terminal
 2. file [file name].enc
 3. cat [file name].enc
-
-
