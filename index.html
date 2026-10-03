@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Different Network — 메트로배니아 프로토타입</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Silkscreen&family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="stage">
+    <canvas id="game" width="480" height="272"></canvas>
+
+    <!-- 텍스트 UI는 DOM으로 (한글을 선명하게 표시하기 위해) -->
+    <div id="ui">
+      <div id="room-name"></div>
+      <div id="toast"></div>
+      <div id="sign"></div>
+      <div id="dialog"><div class="speaker"></div><div class="text"></div></div>
+      <div id="hint"></div>
+
+      <div id="screen-title" class="screen title-screen">
+        <div class="title">Different<br>Network</div>
+        <p class="subtitle">같은 학교, 다른 네트워크</p>
+        <div class="menu">
+          <div><kbd>Enter</kbd> 새 게임</div>
+          <div id="continue-opt" class="hidden"><kbd>C</kbd> 이어하기</div>
+        </div>
+      </div>
+
+      <div id="screen-pause" class="screen hidden">
+        <h2>일시정지</h2>
+        <div class="keys">
+          <span><kbd>←</kbd><kbd>→</kbd></span><span>이동</span>
+          <span><kbd>Z</kbd> / <kbd>Space</kbd></span><span>점프 (길게 누르면 더 높이)</span>
+          <span><kbd>↓</kbd> + <kbd>Z</kbd></span><span>발판 아래로 내려가기</span>
+          <span><kbd>X</kbd></span><span>공격</span>
+          <span><kbd>C</kbd></span><span>캐릭터 능력</span>
+          <span><kbd>Shift</kbd></span><span>대시 (유나)</span>
+          <span><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd> / <kbd>Q</kbd><kbd>E</kbd></span><span>캐릭터 전환</span>
+        </div>
+        <div class="menu">
+          <div><kbd>Esc</kbd> 계속하기</div>
+          <div><kbd>R</kbd> 마지막 저장 지점에서 다시</div>
+        </div>
+      </div>
+
+      <div id="screen-ending" class="screen hidden"><div class="content"></div></div>
+    </div>
+  </div>
+
+  <!-- 로드 순서가 중요: core → data → gfx → world → entities → ui → game → main -->
+  <script src="js/core/config.js"></script>
+  <script src="js/core/utils.js"></script>
+  <script src="js/core/input.js"></script>
+  <script src="js/core/physics.js"></script>
+  <script src="js/data/themes.js"></script>
+  <script src="js/data/sprite-data.js"></script>
+  <script src="js/data/characters.js"></script>
+  <script src="js/data/rooms.js"></script>
+  <script src="js/gfx/sprites.js"></script>
+  <script src="js/gfx/tiles.js"></script>
+  <script src="js/gfx/background.js"></script>
+  <script src="js/gfx/particles.js"></script>
+  <script src="js/world/world.js"></script>
+  <script src="js/entities/player.js"></script>
+  <script src="js/entities/enemies.js"></script>
+  <script src="js/entities/items.js"></script>
+  <script src="js/ui/ui.js"></script>
+  <script src="js/ui/hud.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

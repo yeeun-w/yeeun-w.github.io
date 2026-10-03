@@ -1,0 +1,11 @@
+{
+  "name": "different-network",
+  "version": "0.1.0",
+  "description": "유나 · Z-09 · 가론 3인 전환 메트로배니아 프로토타입 (HTML5 Canvas, 의존성 없음)",
+  "private": true,
+  "scripts": {
+    "start": "npx --yes http-server . -p 8080 -c-1",
+    "build": "node tools/build-single.js"
+  },
+  "license": "UNLICENSED"
+}
