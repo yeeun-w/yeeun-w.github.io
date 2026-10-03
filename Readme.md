@@ -10,5 +10,5 @@ Cybersecurity write-ups and notes as I learn.
 
 - [Sept 28 — P-A](2026-writeups/Sept.28.md)
 
-- [Oct 2 — P-A_sample](different-network
+- [Oct 2, 3 — P-A_sample](different-network)
 )
